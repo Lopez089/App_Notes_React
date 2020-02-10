@@ -1,0 +1,116 @@
+/*#61513E, #7AB89C, #F6F7B8*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.notesApp {
+  background: #7ab89c;
+  width: 486px;
+  min-height: 500px;
+  border-radius: 10px;
+}
+
+.addNotes {
+  height: 30%;
+  height: 200px;
+}
+h3 {
+  margin: 30px 0px;
+  font-size: 30px;
+}
+/*from*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  display: flex;
+  height: 35px;
+  width: 95%;
+  background: #7ab89c;
+  box-shadow: 0px;
+  border: 0px solid;
+  color: #fff;
+  border-bottom: 1px solid;
+  font-size: 14px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.805);
+  font-family: Montserrat;
+  font-size: 14px;
+}
+input:focus {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  box-shadow: 0px;
+  border-bottom: 1px solid;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+button {
+  background: #f6f7b8;
+  width: 43px;
+  height: 43px;
+  border: 0px;
+  border-radius: 50px;
+  margin-top: 10px;
+  float: left;
+  font: 1.4em sans-serif;
+  color: #707070;
+}
+/*NOtas*/
+
+.note {
+  height: 88px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #f6f7b8;
+  color: #707070;
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-areas: "body body body finalize";
+}
+.noteBody {
+  grid-area: body;
+  text-align: left;
+}
+i {
+}
+.noteFinalize {
+  grid-area: finalize;
+  border-left: 1px solid #707070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+ul {
+  list-style: none;
+}
+h4 {
+  margin: 20px 20px 0px;
+}
+p {
+  font-weight: 100;
+  margin: 5px 20px;
+}
